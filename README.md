@@ -1,5 +1,4 @@
 # GURPS Character Dashboard
-## An app made using VueJS.
 
 <h4 align="center"> 
 	🚧  Work in progress  🚧
