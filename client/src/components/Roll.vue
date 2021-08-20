@@ -13,12 +13,12 @@
     <i v-if="this.roll.challenge !== 0">
       <i
         id="fail-icon"
-        v-if="!success && rollResult !== 0"
+        v-if="!roll.success && rollResult !== 0"
         class="fas fa-times"
       ></i>
       <i
         id="success-icon"
-        v-if="success && rollResult !== 0"
+        v-if="roll.success && rollResult !== 0"
         class="fas fa-check"
       ></i>
     </i>
@@ -42,7 +42,6 @@ export default {
   data() {
     return {
       rollResult: 0,
-      success: false,
     };
   },
   props: {
@@ -68,16 +67,25 @@ export default {
         );
       }
       this.roll.result = this.rollResult;
-      this.$emit("dice-rolled", this.roll.title, this.roll.result);
 
-      if (this.rollResult <= this.roll.challenge) {
-        this.success = true;
-      } else {
-        this.success = false;
+      if (this.roll.challenge > 0) {
+        if (this.rollResult <= this.roll.challenge) {
+          this.roll.success = true;
+        } else {
+          this.roll.success = false;
+        }
+        if (this.rollResult === 17 || this.rollRestul === 18)
+          this.roll.success = false;
+        if (this.rollResult === 3 || this.rollResult === 4) this.roll.success = true;
       }
-      if (this.rollResult === 17 || this.rollRestul === 18)
-        this.success = false;
-      if (this.rollResult === 3 || this.rollResult === 4) this.success = true;
+
+      console.log(this.roll.success);
+      this.$emit(
+        "dice-rolled",
+        this.roll.title,
+        this.roll.result,
+        this.roll.success
+      );
     },
     onDelete(id) {
       this.$emit("delete-roll", id);

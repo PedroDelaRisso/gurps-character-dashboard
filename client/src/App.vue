@@ -60,12 +60,12 @@ export default {
 
       this.rolls = [...this.rolls, data];
     },
-    addToHistory(title, result) {
+    addToHistory(title, result, success) {
       if (this.rollHistory.length < 10) {
-        this.rollHistory = [{ title, result }, ...this.rollHistory];
+        this.rollHistory = [{ title, result, success }, ...this.rollHistory];
       } else {
         this.rollHistory.splice(9, 1);
-        this.rollHistory = [{ title, result }, ...this.rollHistory];
+        this.rollHistory = [{ title, result, success }, ...this.rollHistory];
       }
     },
     async deleteRoll(id) {

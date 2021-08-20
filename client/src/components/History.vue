@@ -2,7 +2,17 @@
   <h1>Last 10 rolls</h1>
   <div class="history" :key="roll.id" v-for="roll in rolls">
     <p>
-      <i>{{ roll.title }}:</i> <b>{{ roll.result }}</b>
+      <b class="roll-title">{{ roll.title }}:</b> <b class="roll-result">{{ roll.result }}</b>
+      <i
+        id="fail-icon"
+        v-if="!roll.success && rollResult !== 0"
+        class="fas fa-times"
+      ></i>
+      <i
+        id="success-icon"
+        v-if="roll.success && rollResult !== 0"
+        class="fas fa-check"
+      ></i>
     </p>
   </div>
 </template>
@@ -13,7 +23,7 @@ import Roll from "./Roll";
 export default {
   name: "History",
   components: {
-    Roll
+    Roll,
   },
   props: {
     rolls: Array,
@@ -22,7 +32,19 @@ export default {
 </script>
 
 <style scoped>
-i {
-    font-size: 11pt;
+#fail-icon {
+  color: #ce2828;
+}
+
+#success-icon {
+  color: #72bd34;
+}
+
+.roll-title {
+  margin-right: 10px;
+}
+
+.fas {
+  margin-left: 10px;
 }
 </style>

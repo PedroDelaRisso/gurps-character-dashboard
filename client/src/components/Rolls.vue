@@ -1,6 +1,6 @@
 <template>
   <div :key="roll.id" v-for="roll in rolls">
-    <Roll @dice-rolled="$emit('dice-rolled', roll.title, roll.result)" @delete-roll="$emit('delete-roll', roll.id)" :roll="roll"/>
+    <Roll @dice-rolled="$emit('dice-rolled', roll.title, roll.result, roll.success)" @delete-roll="$emit('delete-roll', roll.id)" :roll="roll"/>
   </div>
 </template>
 
