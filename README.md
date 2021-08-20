@@ -13,8 +13,13 @@
  <a href="#author">Author</a>
 </p>
 
-### [Objective](#objective)
-Build an app that facilitates rolls of any attribute, skill or damage for any character sheet in GURPS 4e. One that is easy to use and setup.
+### [Objective and about the project](#objective)
+Build an app that facilitates rolls of any attribute, skill or damage for any character sheet in GURPS 4e. One that is easy to use and setup. Currently it is easy to use, but not easy to setup, and it is far from ready.
+I intend to add as many rules and features from GURPS 4e into this dashboard.
+
+This project is being done as a means to study VueJS further (as I need this to do my current job). As of now (20/Aug/2021) the backend of this app is a "fake" rest API using a json server. For the near future, if everything goes ok, I want to change the backend to .NET 5.
+
+Have a look at what I have so far!
 
 ### [Technologies](#technologies)
 * [VueJS 3](https://v3.vuejs.org/)
@@ -38,7 +43,8 @@ Open a command terminal on the repository folder, you can do this using VSCode's
 ```bash
 
 cd client
-npm install #to install the packages needed to run and build the app
+# Install the packages needed to run and build the app:
+npm install 
 # Wait for everything to be installed and then run:
 npm run serve
 ```
