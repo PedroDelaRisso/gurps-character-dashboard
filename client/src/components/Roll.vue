@@ -77,7 +77,6 @@ export default {
           this.roll.success = false;
         if (this.rollResult === 3 || this.rollResult === 4) this.roll.success = true;
       }
-      console.log(this.roll.challenge);
       this.$emit(
         "dice-rolled",
         this.roll.title,
