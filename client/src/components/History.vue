@@ -14,6 +14,7 @@
         class="fas fa-check"
       ></i>
     </p>
+    <hr>
   </div>
 </template>
 
@@ -46,5 +47,8 @@ export default {
 
 .fas {
   margin-left: 10px;
+}
+hr {
+  border-color: rgb(121, 121, 121);
 }
 </style>
