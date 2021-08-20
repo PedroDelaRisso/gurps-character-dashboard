@@ -60,12 +60,13 @@ export default {
 
       this.rolls = [...this.rolls, data];
     },
-    addToHistory(title, result, success) {
+    addToHistory(title, result, success, challenge) {
+      console.log(challenge);
       if (this.rollHistory.length < 10) {
-        this.rollHistory = [{ title, result, success }, ...this.rollHistory];
+        this.rollHistory = [{ title, result, success, challenge }, ...this.rollHistory];
       } else {
         this.rollHistory.splice(9, 1);
-        this.rollHistory = [{ title, result, success }, ...this.rollHistory];
+        this.rollHistory = [{ title, result, success, challenge }, ...this.rollHistory];
       }
     },
     async deleteRoll(id) {

@@ -12,7 +12,7 @@
   </form>
   <div class="attribute-rolls" :key="roll.id" v-for="roll in rolls">
     <Roll
-      @dice-rolled="$emit('dice-rolled', roll.title, roll.result, roll.success)"
+      @dice-rolled="$emit('dice-rolled', roll.title, roll.result, roll.success, roll.challenge)"
       :roll="roll"
     />
   </div>

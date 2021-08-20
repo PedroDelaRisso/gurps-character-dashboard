@@ -50,7 +50,6 @@ export default {
   methods: {
     rollDice() {
       this.rollResult = 0;
-      console.log(this.roll.challenge);
       let numberOfDice = parseInt(this.roll.diceString.split("d")[0]);
       let numberOfSides = parseInt(this.roll.diceString.split("d")[1]);
       let modifier;
@@ -78,13 +77,13 @@ export default {
           this.roll.success = false;
         if (this.rollResult === 3 || this.rollResult === 4) this.roll.success = true;
       }
-
-      console.log(this.roll.success);
+      console.log(this.roll.challenge);
       this.$emit(
         "dice-rolled",
         this.roll.title,
         this.roll.result,
-        this.roll.success
+        this.roll.success,
+        this.roll.challenge
       );
     },
     onDelete(id) {
