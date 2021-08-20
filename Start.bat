@@ -1,2 +1,3 @@
+cd client
 start cmd /C npm run backend
-cmd /C npm run serve
+npm run serve
