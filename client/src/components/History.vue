@@ -1,5 +1,5 @@
 <template>
-  <h1>Últimos 10 rolamentos</h1>
+  <h1>Last 10 rolls</h1>
   <div class="history" :key="roll.id" v-for="roll in rolls">
     <p>
       <i>{{ roll.title }}:</i> <b>{{ roll.result }}</b>

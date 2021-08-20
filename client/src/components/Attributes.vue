@@ -1,5 +1,5 @@
 <template>
-  <h1>Atributos</h1>
+  <h1>Attributes</h1>
   <form class="form-control">
     <label for="st">Força (ST):</label>
     <input v-model="st" @change="changeAttribute(0, st)" type="number" />

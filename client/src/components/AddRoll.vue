@@ -1,32 +1,32 @@
 <template>
   <form @submit="onSubmit" class="add-form" autocomplete="off">
     <div class="form-control">
-      <label>Rolamento</label>
+      <label>Rolls</label>
       <input
         type="text"
         name="diceString"
         v-model="diceString"
-        placeholder="Insira um código. Ex: 3d6+2"
+        placeholder="Insert a roll code. Ex: '3d6+2'."
       />
       <input
         type="text"
         name="title"
         v-model="title"
-        placeholder="Insira o título do rolamento"
+        placeholder="Insert a title."
       />
       <input
         type="text"
         name="challenge"
         v-model="challenge"
-        placeholder="Insira o desafio do rolamento"
+        placeholder="Insert a challenge rating. 0 for no challenge."
       />
       <input
         type="text"
         name="color"
         v-model="color"
-        placeholder="Insira o código de uma cor"
+        placeholder="Insert a color code"
       />
-      <input type="submit" value="Salvar Rolamento" class="btn btn-block" />
+      <input type="submit" value="Save roll" class="btn btn-block" />
     </div>
   </form>
 </template>
@@ -47,12 +47,12 @@ export default {
       e.preventDefault();
 
       if (!this.diceString) {
-        alert("Insira um código de rolamento.");
+        alert("Insert a roll code.");
       } else if (!this.challenge) {
-        alert("Insira 0 no desafio caso o CR não se aplique.");
+        alert("Insert a challenge rating. 0 if it doesn't apply");
 
       } else if (!this.title) {
-        alert("Insira um título para o rolamento.")
+        alert("Insert a title.")
       } else {
         if (!this.color) {
           this.color = "black";

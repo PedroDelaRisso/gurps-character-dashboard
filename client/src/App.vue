@@ -2,7 +2,7 @@
   <div class="container">
     <Header
       @toggle-add-roll="toggleAddRoll"
-      title="Rolamentos"
+      title="Rolls"
       :showAddRoll="showAddRoll"
     />
     <div v-if="showAddRoll">
