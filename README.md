@@ -38,7 +38,7 @@ Create a folder for the app's installation. Inside the folder you created, right
 git clone https://github.com/PedroDelaRisso/gurps-character-dashboard.git
 ```
 ### • Then, running the thing
-Open a command terminal on the repository folder, you can do this using VSCode's keyboard shortcut ``Ctrl+'``. Run these commands:
+Open a command terminal on the repository folder, you can do this using VSCode's keyboard shortcut ``Ctrl+'``. Execute the batch file ``Install.bat`` and then the other batch file ``Start.bat`` or run these commands:
 ```bash
 
 cd client
