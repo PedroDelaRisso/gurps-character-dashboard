@@ -38,7 +38,7 @@ Create a folder for the app's installation. Inside the folder you created, right
 ```bash
 git clone https://github.com/PedroDelaRisso/gurps-character-dashboard.git
 ```
-### Then, running the thing
+### • Then, running the thing
 Open a command terminal on the repository folder, you can do this using VSCode's keyboard shortcut ``Ctrl+'``. Run these commands:
 ```bash
 
