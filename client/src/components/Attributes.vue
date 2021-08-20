@@ -28,6 +28,7 @@ export default {
     Roll,
     Button,
   },
+  emits: ['dice-rolled'],
   data() {
     return {
       st: Number,

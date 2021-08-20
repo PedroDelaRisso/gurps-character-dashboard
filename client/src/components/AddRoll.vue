@@ -42,6 +42,7 @@ export default {
       color: "",
     };
   },
+  emits: ['add-roll'],
   methods: {
     onSubmit(e) {
       e.preventDefault();

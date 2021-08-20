@@ -39,6 +39,7 @@ export default {
   components: {
     Button,
   },
+  emits: ['dice-rolled', 'delete-roll'],
   data() {
     return {
       rollResult: 0,

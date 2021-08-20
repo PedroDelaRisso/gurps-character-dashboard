@@ -15,5 +15,6 @@ export default {
   props: {
     rolls: Array,
   },
+  emits: ['dice-rolled', 'delete-roll']
 };
 </script>

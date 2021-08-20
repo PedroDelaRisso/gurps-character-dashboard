@@ -14,7 +14,7 @@
       :rolls="rolls"
     />
     <br />
-    <Attributes @dice-rolled="addToHistory" @rolled-attribute="rollAttribute" />
+    <Attributes @dice-rolled="addToHistory" />
   </div>
   <div class="container">
     <History :rolls="rollHistory" />
@@ -46,6 +46,13 @@ export default {
       showAddRoll: false,
     };
   },
+  emits: [
+    'dice-rolled',
+    'delete-roll',
+    'add-roll',
+    'toggle-add-roll'
+  ],
+  setup(_,{ emit }) {},
   methods: {
     async addRoll(roll) {
       const res = await fetch("api/rolls", {
@@ -61,7 +68,6 @@ export default {
       this.rolls = [...this.rolls, data];
     },
     addToHistory(title, result, success, challenge) {
-      console.log(challenge);
       if (this.rollHistory.length < 10) {
         this.rollHistory = [{ title, result, success, challenge }, ...this.rollHistory];
       } else {
