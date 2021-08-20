@@ -1,0 +1,46 @@
+{
+  "rolls": [
+    {
+      "id": 0,
+      "diceString": "3d6",
+      "title": "General",
+      "challenge": 0,
+      "deleteable": false,
+      "color": "#0099FF"
+    }
+  ],
+  "attributes": [
+    {
+      "id": 0,
+      "diceString": "3d6",
+      "title": "ST",
+      "challenge": 10,
+      "deleteable": false,
+      "color": "#0099FF"
+    },
+    {
+      "id": 1,
+      "diceString": "3d6",
+      "title": "DX",
+      "challenge": 10,
+      "deleteable": false,
+      "color": "#0099FF"
+    },
+    {
+      "id": 2,
+      "diceString": "3d6",
+      "title": "IQ",
+      "challenge": 10,
+      "deleteable": false,
+      "color": "#0099FF"
+    },
+    {
+      "id": 3,
+      "diceString": "3d6",
+      "title": "HT",
+      "challenge": 10,
+      "deleteable": false,
+      "color": "#0099FF"
+    }
+  ]
+}
