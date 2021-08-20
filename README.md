@@ -1,4 +1,4 @@
-# GURPS Character Dashboard
+<h1 align="center"> GURPS Character Dashboard </h1>
 
 <h4 align="center"> 
 	🚧  Work in progress  🚧
