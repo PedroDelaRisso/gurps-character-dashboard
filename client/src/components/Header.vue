@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button @click="$emit('toggle-add-roll')" :text="showAddRoll ? 'Fechar' : 'Adicionar Rolamento'" :color="showAddRoll ? 'red' : '#4DBD6B'"/>
+    <Button @click="$emit('toggle-add-roll')" :text="showAddRoll ? 'Close' : 'Add Roll'" :color="showAddRoll ? 'red' : '#4DBD6B'"/>
   </header>
 </template>
 
