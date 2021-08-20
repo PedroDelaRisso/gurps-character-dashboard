@@ -8,7 +8,7 @@
 <p align="center">
  <a href="#objective">Objective</a> •
  <a href="#technologies">Technologies</a> •
- <a href="#Requirements">Requirements</a> •
+ <a href="#requirements">Requirements</a> •
  <a href="#running">Running the app</a> •
  <a href="#author">Author</a>
 </p>
@@ -28,7 +28,7 @@ Have a look at what I have so far!
 * [Git](https://git-scm.com)
 * [Visual Studio Code](https://code.visualstudio.com)
 
-### [Requirements](#Requirements)
+### [Requirements](#requirements)
 Before starting, you'll need [NodeJS](https://nodejs.org/) and [Git](https://git-scm.com) installed on your machine.
 And a code editor, I use [Visual Studio Code](https://code.visualstudio.com).
 
